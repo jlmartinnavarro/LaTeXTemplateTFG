@@ -7,7 +7,7 @@ En ella se corrige un error relacionado con el entorno algorithm, utilizado para
 
 Puedes encontrar la plantilla original en la web de la ETSInf (http://www.inf.upv.es/www/etsinf/wp-content/uploads/2017/06/U0724319.rar), información sobre diferentes plantillas y guías de estilo (https://www.inf.upv.es/www/etsinf/es/plantilla-tfg/) y otra información de interés (https://www.inf.upv.es/www/etsinf/es/category/secretaria/tfg/) como preguntas frecuentes [FAQ](https://www.inf.upv.es/www/etsinf/es/preguntas-frecuentes-faqs-tfg-tfm/).
 
-Si ya dispones de la plantilla, únicamente hace falta que te descargues \tex\latex\tfgetsinf\tfgetsinf.cls, o en su defecto modificar dentro de eso documento la línea que declara el entorno de algorithm, eliminando la parte de name:
+Si ya dispones de la plantilla, únicamente hace falta que te descargues \tex\latex\tfgetsinf\tfgetsinf.cls, o en su defecto modificar dentro de ese documento la línea que declara el entorno de algorithm, eliminando la parte de name:
 
 %Antes
 
@@ -23,7 +23,7 @@ This repository contains a LaTeX template for degree's final project of ETSInf (
 
 An error related to the algorithm enviroment, used to format pseudocode, it's fixed. You can find the original template in ETSInf's website (http://www.inf.upv.es/www/etsinf/wp-content/uploads/2017/06/U0724319.rar), more information related to the different templates  (https://www.inf.upv.es/www/etsinf/es/plantilla-tfg/) and general information about the final project (https://www.inf.upv.es/www/etsinf/es/category/secretaria/tfg/) cas the FAQ (https://www.inf.upv.es/www/etsinf/es/preguntas-frecuentes-faqs-tfg-tfm/).
 
-If you have already the template the only file that has been modified is \tex\latex\tfgetsinf\tfgetsinf.cls. You can also modify your local copy where algorithm enviroment it's modified, as you can se in the following lines:
+If you have already the template the only file that has been modified is \tex\latex\tfgetsinf\tfgetsinf.cls. You can also modify your local copy where algorithm enviroment is modified, as you can se in the following lines:
 
 %Before
 
