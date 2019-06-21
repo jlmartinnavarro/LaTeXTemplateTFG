@@ -1,4 +1,4 @@
-\ProvidesClass{tfgetsinf}[2015/05/04 v1 LaTeX document class]
+\ProvidesClass{tfgetsinf}[2019/06/21 v1.1 LaTeX document class]
 %
 % Opcions
 %
@@ -158,9 +158,8 @@
 \RequirePackage{algorithmic}
 \RequirePackage[within=chapter]{newfloat}
 
-\DeclareFloatingEnvironment[fileext=loa,
-     listname=\listalgorithmname,name=\algorithmname]{algorithm}
-     \DeclareCaptionFormat{ruled}{\hrulefill\par#1#2#3\vspace{-.5\baselineskip}\hrulefill}
+\DeclareFloatingEnvironment[fileext=loa,listname=\listalgorithmname]{algorithm}
+\DeclareCaptionFormat{ruled}{\hrulefill\par#1#2#3\vspace{-.5\baselineskip}\hrulefill}
 \captionsetup[algorithm]{justification=raggedright,singlelinecheck=off,position=below,format=ruled}  
    
 \DeclareFloatingEnvironment[fileext=loq,
