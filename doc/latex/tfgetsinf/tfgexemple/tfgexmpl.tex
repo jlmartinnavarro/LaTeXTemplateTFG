@@ -1,0 +1,362 @@
+[Trash Info]
+Path=work/14-15/XaviMolero/PlantillaLaTeXdelTFG/tfgetsinf/doc/latex/tfgetsinf/tfgexemple/logo-etsinf.pdf
+DeletionDate=2015-10-18T11:32:14
+       %
+%                                                                             %
+% Les opcions admissibles son:                                                %
+%      12pt / 11pt            (cos dels tipus de lletra; no feu servir 10pt)  %
+%                                                                             %
+% catalan/spanish/english     (llengua principal del treball)                 %
+%                                                                             % 
+% french/italian/german...    (si necessiteu fer servir alguna altra llengua) %
+%                                                                             %
+% listoffigures               (El document inclou un Index de figures)        %
+% listoftables                (El document inclou un Index de taules)         %
+% listofquadres               (El document inclou un Index de quadres)        %
+% listofalgorithms            (El document inclou un Index d'algorismes)      %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt,catalan,
+               listoftables,listoffigures,listofalgorithms,listofquadres]
+               {tfgetsinf}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     CODIFICACIO DEL FITXER FONT                             %
+%                                                                             %
+%    windows fa servir normalment 'ansinew'                                   %
+%    amb linux es possible que siga 'latin1' o 'latin9'                       %
+%    Pero el mes recomanable es fer servir utf8 (unicode 8)                   %
+%                                          (si el vostre editor ho permet)    % 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[utf8]{inputenc} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                        ALTRES PAQUETS I DEFINICIONS                         %
+%                                                                             %
+% Carregueu aci els paquets que necessiteu i declareu les comandes i entorns  %
+%                                          (aquesta seccio pot ser buida)     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{lipsum}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                        DADES DEL TREBALL                                    %
+%                                                                             %
+% titol, alumne, tutor i curs academic                                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Automatització de la gestió \\
+         d'una granja de conills de bosc\\ (\emph{oryctolagus cuniculus})}
+\author{Rogelio Conejo Lapin}
+\tutor{Robert Fuster\\Xavier Molero}
+\curs{2014-2015}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     PARAULES CLAU/PALABRAS CLAVE/KEY WORDS                  %
+%                                                                             %
+% Independentment de la llengua del treball, s'hi han d'incloure              %
+% les paraules clau i el resum en els tres idiomes                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\keywords{conill,oryctolagus cuniculus,lepòrid}     % Paraules clau 
+         {conejo,oryctolagus cuniculus,leporidos}   % Palabras clave
+         {rabbit,oryctolagus cuniculus, leporids}   % Key words
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                              INICI DEL DOCUMENT                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%              RESUMS DEL TFG EN VALENCIA, CASTELLA I ANGLES                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+\lipsum[1]
+\end{abstract}
+\begin{abstract}[spanish]
+\lipsum[1]
+\end{abstract}
+\begin{abstract}[english]
+\lipsum[1]
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                              CONTINGUT DEL TREBALL                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\mainmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                  INTRODUCCIO                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introducci\'o}
+
+\lipsum[2]
+\begin{figure}
+\centering
+\includegraphics[scale=0.75]{bugs}
+\caption{Un conill}\label{fig:bugs}
+\end{figure}
+\lipsum[3]
+\lipsum[4]
+
+\section{Motivaci\'o}
+
+\lipsum[5]
+
+\section{Objectius}
+
+\lipsum[6]
+\lipsum[7]
+\lipsum[8]
+
+\section{Estructura de la mem\`oria}
+
+\lipsum[9]
+\lipsum[10]
+
+\section{Notes bibliografiques}
+
+\lipsum[11]
+\lipsum[12]
+\lipsum[13]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                  CAPITOL                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{La cria del conill}
+
+
+\lipsum[14]
+\lipsum[15]
+\lipsum[16]
+\lipsum[17]
+\lipsum[18]
+
+\section{Cria en granges ecològiques}
+
+\lipsum[19]
+\begin{algorithm}
+   \caption{Els conills del Fibonacci}\label{algorisme:Fibonacci}
+\begin{algorithmic}
+\STATE $a(1)=1$
+\STATE $a(2)=2$
+\WHILE{$n\leq12$}  
+\STATE $a(n)=a(n-2)+a(n-1)$
+\STATE{$n\leftarrow n+1$}
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+\begin{table}[h]
+\[
+\begin{array}{c|*{12}{c}}
+n & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\\hline
+a_n & 1 & 1 & 2 & 3 & 5 & 8 & 13 & 21 & 34 & 55 & 89 & 144
+\end{array}
+\]
+\caption{$a_1=a_2=1; a_{n}=a_{n-2}+a_{n-1}$}
+\end{table}
+\lipsum[20]
+\lipsum[21]
+\begin{quadre}
+\centering
+\setlength{\unitlength}{0.8cm}
+\begin{picture}(12,28)(0,-2)
+ \put(0,-1){\makebox(2,0)[c]{Gener}}
+ \put(2,-1){\makebox(2,0)[c]{Febrer}}
+ \put(4,-1){\makebox(2,0)[c]{Març}}
+ \put(6,-1){\makebox(2,0)[c]{Abril}}
+ \put(8,-1){\makebox(2,0)[c]{Maig}}
+ \put(10,-1){\makebox(2,0)[c]{Juny}}
+  \put(0.5,0){\includegraphics[width=1\unitlength]{bugspetit}}
+%
+  \multiput(2,0)(2,0){5}{\includegraphics[width=2\unitlength]{bugs2}}
+%
+  \put(4.5,4){\includegraphics[width=1\unitlength]{bugspetit}}
+%
+  \multiput(6,4)(2,0){3}{\includegraphics[width=2\unitlength]{bugs2}}
+  \put(6.5,8){\includegraphics[width=1\unitlength]{bugspetit}}
+%
+
+  \multiput(8,8)(2,0){2}{\includegraphics[width=2\unitlength]{bugs2}}
+  \put(8.5,12){\includegraphics[width=1\unitlength]{bugspetit}}
+  \put(8.5,14){\includegraphics[width=1\unitlength]{bugspetit}}
+
+  \put(10,12){\includegraphics[width=2\unitlength]{bugs2}}
+  \put(10,16){\includegraphics[width=2\unitlength]{bugs2}}
+  \put(10.5,20){\includegraphics[width=1\unitlength]{bugspetit}}
+  \put(10.5,22){\includegraphics[width=1\unitlength]{bugspetit}}
+  \put(10.5,24){\includegraphics[width=1\unitlength]{bugspetit}}
+\end{picture}
+\caption{Creixeu i multipliqueu-vos}
+\end{quadre}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                 CONCLUSIONS                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Conclusions}
+
+\lipsum[22]
+\lipsum[23]
+\lipsum[24]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                BIBLIOGRAFIA                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{thebibliography}{10}
+
+\bibitem{augarten}
+Stan Augarten.
+\newblock \textit{Bit by bit: an illustrated history of computers}.
+\newblock George Allen \& Unwin, Londres, 1984.
+
+\bibitem{barcelo}
+Miquel Barceló.
+\newblock \textit{Una història de la informàtica}.
+\newblock Editorial UOC, Barcelona, 2008.
+
+\bibitem{brainerd}
+J.~G. Brainerd i T.~K. Sharpless.
+\newblock The ENIAC.
+\newblock \textit{Proceedings of the IEEE}, 87:6:1031--1041, junio, 1999. 
+\newblock Reimprés de \textit{Electrical Engineering}, 67:2:163--172, febrer, 1948. 
+
+\bibitem{breton}
+Philippe Breton.
+\newblock \textit{Historia y crítica de la informática}.
+\newblock Cátedra, Madrid, 1989.
+
+\bibitem{campbell}
+Martin Campbell-Kelly y William Aspray.
+\newblock \textit{Computer: a history of the information machine}.
+\newblock Westview Press, segona edició, 2004.
+
+\bibitem{ceruzzi}
+Paul~E. Ceruzzi.
+\newblock \textit{A history of modern computing}.
+\newblock MIT Press, segona edició, 2003.
+
+\bibitem{coello}
+Carlos~A. Coello Coello.
+\newblock \textit{Breve historia de la computación y sus pioneros}.
+\newblock Fondo de Cultura Económica, México, 2003.
+
+\bibitem{WAR}
+Comunicat de prenmsa del Departament de la Guerra, emés el 16 de febrer de 1946. 
+\newblock Consultat a \url{http://americanhistory.si.edu/comphist/pr1.pdf}.
+
+\bibitem{fritz}
+W. Barkley Fritz.
+\newblock ENIAC -- a problem solver.
+\newblock \textit{IEEE Annals of the History of Computing}, 16:1:25--45, 1994.
+
+\bibitem{goldstine}
+Herman~H. Goldstine.
+\newblock \textit{The computer from Pascal to von Neumann}.
+\newblock Princeton University Press, 1980.
+
+\bibitem{hally}
+Mike Hally.
+\newblock \textit{Electronic brains: stories from the dawn of the computer age}.
+\newblock Granta Books, Londres, 2005.
+
+\bibitem{ifrah}
+Georges Ifrah.
+\newblock \textit{Historia universal de las cifras}.
+\newblock Espasa Calpe, S.A., Madrid, sisena edició, 2008.
+
+\bibitem{light}
+Jennifer~S. Light
+\newblock When computers were women.
+\newblock \textit{Technology and Culture}, 40:3:455--483, juliol, 1999.
+
+\bibitem{martin}
+C. Dianne Martin.
+\newblock ENIAC: press conference that shook the world.
+\newblock \textit{IEEE Technology and Society Magazine}, 4(14):3--10, hivern de 1995/1996.
+
+\bibitem{mccartney}
+Scott McCartney.
+\newblock \textit{ENIAC: The triumphs and tragedies of the world's first computer}.
+\newblock Walker and Company, Nova York, 1999.
+
+\bibitem{molero}
+Xavier Molero.
+\newblock ENIAC: una máquina y un tiempo por redescubrir.
+\newblock \textit{XIX Jornadas sobre la Enseñanza Universitaria en Informática}, pp. 241-248, Castelló de la Plana, 2013.
+
+\bibitem{shurkin}
+Joel Shurkin.
+\newblock \textit{Engines of the mind: the evolution of the computer from mainframes to microprocessors}.
+\newblock W. W. Norton \& Company, Nova York, 1996.
+
+\bibitem{swedin}
+Eric~G. Swedin i David~L. Ferro.
+\newblock \textit{Computers: the life story of a technology}.
+\newblock The Johns Hopkins University Press, Baltimore, 2005.
+
+\bibitem{williams}
+Michael~R. Williams.
+\newblock \textit{A history of computing technology}.
+\newblock IEEE Society Press, Los Alamitos, CA, segona edició, 1997.
+
+\bibitem{zoppke}
+Till Zoppke i Raúl Rojas.
+\newblock The virtual life of ENIAC: simulating the operation of the first electronic computer.
+\newblock \textit{IEEE Annals of the History of Computing}, 28:18--25, abril, 2006.
+
+\end{thebibliography}
+\cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                           APÈNDIXS  (Si n'hi ha!)                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\APPENDIX 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                         LA CONFIGURACIO DEL SISTEMA                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Configuració del sistema}
+
+\lipsum[25]
+\lipsum[26]
+\lipsum[27]
+
+\section{Fase d'inicialització}
+
+\lipsum[28]
+
+\section{Identificació de dispositius}
+
+\lipsum[29]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                               ALTRES  APÈNDIXS                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Els conills a travès de la història}
+
+\lipsum[30]
+\lipsum[31]
+\lipsum[32]
+\lipsum[33]
+\lipsum[34]
+\lipsum[35]
+\lipsum[36]
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                              FI DEL DOCUMENT                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
