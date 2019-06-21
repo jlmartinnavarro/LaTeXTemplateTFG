@@ -10,9 +10,11 @@ Puedes encontrar la plantilla original en la web de la ETSInf (http://www.inf.up
 Si ya dispones de la plantilla, únicamente hace falta que te descargues \tex\latex\tfgetsinf\tfgetsinf.cls, o en su defecto modificar dentro de eso documento la línea que declara el entorno de algorithm, eliminando la parte de name:
 
 %Antes
+
 \DeclareFloatingEnvironment[fileext=loa,listname=\listalgorithmname,name=\algorithmname]{algorithm}
 
 %Después
+
 \DeclareFloatingEnvironment[fileext=loa,listname=\listalgorithmname]{algorithm}
 
 ## English
@@ -24,7 +26,9 @@ An error related to the algorithm enviroment, used to format pseudocode, it's fi
 If you have already the template the only file that has been modified is \tex\latex\tfgetsinf\tfgetsinf.cls. You can also modify your local copy where algorithm enviroment it's modified, as you can se in the following lines:
 
 %Before
+
 \DeclareFloatingEnvironment[fileext=loa,listname=\listalgorithmname,name=\algorithmname]{algorithm}
 
 %After
+
 \DeclareFloatingEnvironment[fileext=loa,listname=\listalgorithmname]{algorithm}
