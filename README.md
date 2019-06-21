@@ -17,6 +17,9 @@ Si ya dispones de la plantilla, únicamente hace falta que te descargues \tex\la
 
 \DeclareFloatingEnvironment[fileext=loa,listname=\listalgorithmname]{algorithm}
 
+Además necesitas utilizar el comando \hrulefill entre \end{algorithmic} y \end{algorithm} para conseguir el estilo deseado.
+  
+
 ## English
 
 This repository contains a LaTeX template for degree's final project of ETSInf (UPV).
@@ -32,3 +35,5 @@ If you have already the template the only file that has been modified is \tex\la
 %After
 
 \DeclareFloatingEnvironment[fileext=loa,listname=\listalgorithmname]{algorithm}
+
+Also you need to add the command \hrulefill between \end{algorithmic} and \end{algorithm} to achieve the desired style.
